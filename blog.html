@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — VYRA</title>
+<meta name="description" content="Insights on AI, cloud engineering, and digital transformation from the VYRA team.">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader-mark"><svg viewBox="0 0 64 64" fill="none"><path d="M8 10 L32 54 L56 10" stroke="url(#lg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg" x1="0" y1="0" x2="64" y2="64"><stop offset="0" stop-color="#8A2BE2"/><stop offset="1" stop-color="#00D9FF"/></linearGradient></defs></svg></div>
+  <div class="loader-text">VYRA</div>
+</div>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="scroll-progress"></div>
+<div class="cursor-glow"></div>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 64 64" fill="none"><path d="M8 10 L32 54 L56 10" stroke="url(#navg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="navg" x1="0" y1="0" x2="64" y2="64"><stop offset="0" stop-color="#8A2BE2"/><stop offset="1" stop-color="#00D9FF"/></linearGradient></defs></svg></span>VYRA</a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="team.html">Team</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Let's Build</a></div>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero hero-sub">
+    <canvas aria-hidden="true"></canvas>
+    <div class="container hero-content">
+      <div class="eyebrow">Insights</div>
+      <h1>Field notes from <span class="accent">the front line.</span></h1>
+      <p class="lead">What we're learning building AI, cloud, and software platforms — written by the engineers doing the work.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="blog-layout">
+        <div>
+          <div class="glass-card featured-post reveal">
+            <div class="banner"><img src="images/AI.png.png" alt="Why most enterprise AI pilots never reach production" loading="lazy" width="800" height="600"></div>
+            <div class="body">
+              <div class="post-cat">Artificial Intelligence</div>
+              <h2 style="font-size:1.6rem">Why most enterprise AI pilots never reach production</h2>
+              <p>A breakdown of the four failure modes we see most often — and the architecture decisions that prevent them, drawn from 40+ production AI deployments.</p>
+              <div class="post-meta"><span>Jonah Ade</span><span>·</span><span>July 18, 2026</span><span>·</span><span>8 min read</span></div>
+            </div>
+          </div>
+
+          <div id="blog-search-anchor"></div>
+          <div class="post-grid">
+            <div class="glass-card post-card reveal">
+              <div class="banner-sm"><img src="images/cloudcomputing.png.png" alt="Designing for zero-downtime migrations" loading="lazy" width="640" height="400"></div>
+              <div class="post-cat">Cloud Computing</div>
+              <h3 style="font-size:1.05rem">Designing for zero-downtime migrations</h3>
+              <p style="font-size:.88rem">Lessons from migrating a 15-year-old monolith without a single customer-facing outage.</p>
+              <div class="post-meta"><span>Marcus Chen</span><span>·</span><span>July 10, 2026</span></div>
+            </div>
+            <div class="glass-card post-card reveal reveal-delay-1">
+              <div class="banner-sm"><img src="images/cybersecurity.png.png" alt="Zero trust isn't a product, it's a posture" loading="lazy" width="640" height="400"></div>
+              <div class="post-cat">Cybersecurity</div>
+              <h3 style="font-size:1.05rem">Zero trust isn't a product, it's a posture</h3>
+              <p style="font-size:.88rem">Why buying a "zero trust" tool won't fix an architecture built on implicit trust.</p>
+              <div class="post-meta"><span>Sofia Marchetti</span><span>·</span><span>June 29, 2026</span></div>
+            </div>
+            <div class="glass-card post-card reveal reveal-delay-2">
+              <div class="banner-sm"><img src="images/UIUX.png.png" alt="The design system nobody actually uses" loading="lazy" width="640" height="400"></div>
+              <div class="post-cat">UI/UX Design</div>
+              <h3 style="font-size:1.05rem">The design system nobody actually uses</h3>
+              <p style="font-size:.88rem">Why most design systems die within a year — and what makes the ones that survive different.</p>
+              <div class="post-meta"><span>Priya Ramanathan</span><span>·</span><span>June 14, 2026</span></div>
+            </div>
+            <div class="glass-card post-card reveal reveal-delay-3">
+              <div class="banner-sm"><img src="images/dataanalytics.png.png" alt="Your dashboard is lying to you" loading="lazy" width="640" height="400"></div>
+              <div class="post-cat">Data Analytics</div>
+              <h3 style="font-size:1.05rem">Your dashboard is lying to you</h3>
+              <p style="font-size:.88rem">Common data pipeline mistakes that quietly corrupt executive dashboards.</p>
+              <div class="post-meta"><span>Naomi Sato</span><span>·</span><span>May 30, 2026</span></div>
+            </div>
+            <div class="glass-card post-card reveal">
+              <div class="banner-sm"><img src="images/automation.png.png" alt="Automate the process, not the symptom" loading="lazy" width="640" height="400"></div>
+              <div class="post-cat">Automation</div>
+              <h3 style="font-size:1.05rem">Automate the process, not the symptom</h3>
+              <p style="font-size:.88rem">A framework for deciding what to automate first — and what to fix before automating at all.</p>
+              <div class="post-meta"><span>David Okafor</span><span>·</span><span>May 12, 2026</span></div>
+            </div>
+            <div class="glass-card post-card reveal reveal-delay-1">
+              <div class="banner-sm"><img src="images/mobileapps.png.png" alt="Offline-first isn't optional anymore" loading="lazy" width="640" height="400"></div>
+              <div class="post-cat">Mobile Apps</div>
+              <h3 style="font-size:1.05rem">Offline-first isn't optional anymore</h3>
+              <p style="font-size:.88rem">Designing mobile apps that stay useful when the network doesn't.</p>
+              <div class="post-meta"><span>Lucas Ferreira</span><span>·</span><span>April 28, 2026</span></div>
+            </div>
+          </div>
+          <p class="no-results">No articles match your search.</p>
+        </div>
+
+        <aside>
+          <div class="glass-card sidebar-block reveal">
+            <h4>Search</h4>
+            <form class="search-box" role="search">
+              <label for="blog-search" class="sr-only">Search articles</label>
+              <input id="blog-search" type="text" placeholder="Search articles…">
+              <button id="blog-search-btn" type="submit" aria-label="Search">→</button>
+            </form>
+          </div>
+          <div class="glass-card sidebar-block reveal">
+            <h4>Categories</h4>
+            <div class="cat-list">
+              <a href="#blog-search-anchor" data-cat="Artificial Intelligence">AI <span>(6)</span></a>
+              <a href="#blog-search-anchor" data-cat="Cloud Computing">Cloud <span>(9)</span></a>
+              <a href="#blog-search-anchor" data-cat="Cybersecurity">Security <span>(4)</span></a>
+              <a href="#blog-search-anchor" data-cat="UI/UX Design">Design <span>(7)</span></a>
+              <a href="#blog-search-anchor" data-cat="Data Analytics">Data <span>(5)</span></a>
+            </div>
+          </div>
+          <div class="glass-card sidebar-block reveal">
+            <h4>Recent posts</h4>
+            <div class="recent-item"><img class="recent-thumb" src="images/dataanalytics.png.png" alt="Your dashboard is lying to you" loading="lazy"><div><strong>Your dashboard is lying to you</strong><div class="post-meta"><span>May 30, 2026</span></div></div></div>
+            <div class="recent-item"><img class="recent-thumb" src="images/cybersecurity.png.png" alt="Zero trust isn't a product" loading="lazy"><div><strong>Zero trust isn't a product</strong><div class="post-meta"><span>June 29, 2026</span></div></div></div>
+            <div class="recent-item"><img class="recent-thumb" src="images/mobileapps.png.png" alt="Offline-first isn't optional" loading="lazy"><div><strong>Offline-first isn't optional</strong><div class="post-meta"><span>April 28, 2026</span></div></div></div>
+          </div>
+          <div class="glass-card sidebar-block reveal">
+            <h4>Newsletter</h4>
+            <p style="font-size:.85rem">Get one email a month with what we're learning.</p>
+            <form class="newsletter-mini"><input type="email" placeholder="you@company.com" aria-label="Email address"><button type="submit">Join</button></form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 64 64" fill="none"><path d="M8 10 L32 54 L56 10" stroke="url(#fg6)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="fg6" x1="0" y1="0" x2="64" y2="64"><stop offset="0" stop-color="#8A2BE2"/><stop offset="1" stop-color="#00D9FF"/></linearGradient></defs></svg></span>VYRA</a>
+        <p>Engineering tomorrow's digital experiences — AI, cloud, and software craft for ambitious teams.</p>
+        <div class="social-row"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X / Twitter">X</a><a href="#" aria-label="GitHub">gh</a></div>
+      </div>
+      <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="team.html">Team</a><a href="contact.html">Contact</a></div>
+      <div><h4>Services</h4><a href="services.html">AI Solutions</a><a href="services.html">Cloud Computing</a><a href="services.html">Cybersecurity</a><a href="services.html">UI/UX Design</a></div>
+      <div><h4>Resources</h4><a href="blog.html">Blog</a><a href="pricing.html">Pricing</a><a href="404.html">Careers</a><a href="contact.html">Support</a></div>
+      <div><h4>Newsletter</h4><p style="font-size:.85rem">Monthly insights on AI and digital engineering.</p>
+        <form class="newsletter-mini"><input type="email" placeholder="you@company.com" aria-label="Email address"><button type="submit">Join</button></form>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 VYRA Technologies. All rights reserved.</span><span>Privacy · Terms · Security</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/components.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>

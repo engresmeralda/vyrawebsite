@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — VYRA</title>
+<meta name="description" content="Selected VYRA projects across web, mobile, AI, fintech, healthcare, and enterprise software.">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader-mark"><svg viewBox="0 0 64 64" fill="none"><path d="M8 10 L32 54 L56 10" stroke="url(#lg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg" x1="0" y1="0" x2="64" y2="64"><stop offset="0" stop-color="#8A2BE2"/><stop offset="1" stop-color="#00D9FF"/></linearGradient></defs></svg></div>
+  <div class="loader-text">VYRA</div>
+</div>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="scroll-progress"></div>
+<div class="cursor-glow"></div>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 64 64" fill="none"><path d="M8 10 L32 54 L56 10" stroke="url(#navg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="navg" x1="0" y1="0" x2="64" y2="64"><stop offset="0" stop-color="#8A2BE2"/><stop offset="1" stop-color="#00D9FF"/></linearGradient></defs></svg></span>VYRA</a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="team.html">Team</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Let's Build</a></div>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero hero-sub">
+    <canvas aria-hidden="true"></canvas>
+    <div class="container hero-content">
+      <div class="eyebrow">Selected Work</div>
+      <h1>Proof, not <span class="accent">promises.</span></h1>
+      <p class="lead">A cross-section of platforms VYRA has designed, built, and shipped for partners across finance, health, and enterprise.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="filter-bar reveal" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="ai">Artificial Intelligence</button>
+        <button class="filter-btn" data-filter="fintech">FinTech</button>
+        <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+        <button class="filter-btn" data-filter="enterprise">Enterprise Software</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item reveal" data-category="fintech" data-title="Orbit Ledger Platform" data-desc="A real-time reconciliation engine processing 40M+ transactions daily with sub-second latency and full audit trails." data-client="Orbit Finance" data-year="2026" data-stack="Go · Kafka · React">
+          <img class="thumb" src="images/orbitledger.png.png" alt="Orbit Ledger Platform project screenshot" loading="lazy" width="700" height="525"><div class="tint"></div><div class="overlay"><div class="tag">FinTech</div><h3>Orbit Ledger Platform</h3></div>
+        </div>
+        <div class="portfolio-item reveal" data-category="healthcare" data-title="Helix Patient Intelligence" data-desc="An ML-driven triage system helping clinicians prioritize care with explainable risk scoring." data-client="Helix Health" data-year="2025" data-stack="Python · PyTorch · Next.js">
+          <img class="thumb" src="images/helixpatient.png.png" alt="Helix Patient Intelligence project screenshot" loading="lazy" width="700" height="525"><div class="tint"></div><div class="overlay"><div class="tag">Healthcare</div><h3>Helix Patient Intelligence</h3></div>
+        </div>
+        <div class="portfolio-item reveal" data-category="enterprise" data-title="Atlas Cloud Migration" data-desc="Zero-downtime migration of a 15-year-old monolith into a containerized, multi-region cloud platform." data-client="Atlas Cloud" data-year="2025" data-stack="Kubernetes · Terraform · AWS">
+          <img class="thumb" src="images/atlascloud.png.png" alt="Atlas Cloud Migration project screenshot" loading="lazy" width="700" height="525"><div class="tint"></div><div class="overlay"><div class="tag">Enterprise Software</div><h3>Atlas Cloud Migration</h3></div>
+        </div>
+        <div class="portfolio-item reveal" data-category="ai" data-title="Prismatic Vision Engine" data-desc="A computer-vision pipeline for automated quality inspection on manufacturing lines." data-client="Prismatic Industries" data-year="2026" data-stack="PyTorch · ONNX · Edge">
+          <img class="thumb" src="images/prismaticvision.png.png" alt="Prismatic Vision Engine project screenshot" loading="lazy" width="700" height="525"><div class="tint"></div><div class="overlay"><div class="tag">Artificial Intelligence</div><h3>Prismatic Vision Engine</h3></div>
+        </div>
+        <div class="portfolio-item reveal" data-category="mobile" data-title="Northwind Field App" data-desc="An offline-first field service app for technicians working in low-connectivity environments." data-client="Northwind Energy" data-year="2024" data-stack="React Native · SQLite">
+          <img class="thumb" src="images/northwind.png.png" alt="Northwind Field App project screenshot" loading="lazy" width="700" height="525"><div class="tint"></div><div class="overlay"><div class="tag">Mobile Apps</div><h3>Northwind Field App</h3></div>
+        </div>
+        <div class="portfolio-item reveal" data-category="web" data-title="Quanta Labs Dashboard" data-desc="A real-time research dashboard visualizing petabyte-scale experiment data." data-client="Quanta Labs" data-year="2025" data-stack="D3.js · WebSockets · Rust">
+          <img class="thumb" src="images/quantalabs.png.png" alt="Quanta Labs Dashboard project screenshot" loading="lazy" width="700" height="525"><div class="tint"></div><div class="overlay"><div class="tag">Web Apps</div><h3>Quanta Labs Dashboard</h3></div>
+        </div>
+        <div class="portfolio-item reveal" data-category="fintech" data-title="Meridian Risk Console" data-desc="A portfolio risk modeling console used by institutional traders in five markets." data-client="Meridian Capital" data-year="2024" data-stack="Python · React · gRPC">
+          <img class="thumb" src="images/meridianrisk.png.png" alt="Meridian Risk Console project screenshot" loading="lazy" width="700" height="525"><div class="tint"></div><div class="overlay"><div class="tag">FinTech</div><h3>Meridian Risk Console</h3></div>
+        </div>
+        <div class="portfolio-item reveal" data-category="ai" data-title="Aria Support Copilot" data-desc="An LLM-powered support copilot reducing average resolution time by 46%." data-client="Aria Systems" data-year="2026" data-stack="LLM · RAG · Node.js">
+          <img class="thumb" src="images/ariasupport.png.png" alt="Aria Support Copilot project screenshot" loading="lazy" width="700" height="525"><div class="tint"></div><div class="overlay"><div class="tag">Artificial Intelligence</div><h3>Aria Support Copilot</h3></div>
+        </div>
+        <div class="portfolio-item reveal" data-category="enterprise" data-title="Vantage ERP Suite" data-desc="A modular ERP replacing four disconnected legacy systems across a 3,000-person company." data-client="Vantage Group" data-year="2023" data-stack="Java · PostgreSQL · React">
+          <img class="thumb" src="images/vantageerp.png.png" alt="Vantage ERP Suite project screenshot" loading="lazy" width="700" height="525"><div class="tint"></div><div class="overlay"><div class="tag">Enterprise Software</div><h3>Vantage ERP Suite</h3></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 64 64" fill="none"><path d="M8 10 L32 54 L56 10" stroke="url(#fg3)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="fg3" x1="0" y1="0" x2="64" y2="64"><stop offset="0" stop-color="#8A2BE2"/><stop offset="1" stop-color="#00D9FF"/></linearGradient></defs></svg></span>VYRA</a>
+        <p>Engineering tomorrow's digital experiences — AI, cloud, and software craft for ambitious teams.</p>
+        <div class="social-row"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X / Twitter">X</a><a href="#" aria-label="GitHub">gh</a></div>
+      </div>
+      <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="team.html">Team</a><a href="contact.html">Contact</a></div>
+      <div><h4>Services</h4><a href="services.html">AI Solutions</a><a href="services.html">Cloud Computing</a><a href="services.html">Cybersecurity</a><a href="services.html">UI/UX Design</a></div>
+      <div><h4>Resources</h4><a href="blog.html">Blog</a><a href="pricing.html">Pricing</a><a href="404.html">Careers</a><a href="contact.html">Support</a></div>
+      <div><h4>Newsletter</h4><p style="font-size:.85rem">Monthly insights on AI and digital engineering.</p>
+        <form class="newsletter-mini"><input type="email" placeholder="you@company.com" aria-label="Email address"><button type="submit">Join</button></form>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 VYRA Technologies. All rights reserved.</span><span>Privacy · Terms · Security</span></div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Project details">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close">×</button>
+    <img class="modal-banner" alt="" data-modal-img>
+    <div class="post-cat" data-modal-cat></div>
+    <h3 data-modal-title style="font-size:1.5rem"></h3>
+    <p data-modal-desc></p>
+    <div class="modal-meta" data-modal-meta></div>
+    <a href="contact.html" class="btn btn-primary">Start a similar project</a>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/components.js"></script>
+<script src="js/portfolio.js"></script>
+</body>
+</html>
